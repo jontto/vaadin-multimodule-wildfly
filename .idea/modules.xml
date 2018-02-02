@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vaadin-multimodule-wildfly.iml" filepath="$PROJECT_DIR$/vaadin-multimodule-wildfly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vaadin-multimodule-wildfly-addon/vaadin-multimodule-wildfly-addon.iml" filepath="$PROJECT_DIR$/vaadin-multimodule-wildfly-addon/vaadin-multimodule-wildfly-addon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vaadin-multimodule-wildfly-backend/vaadin-multimodule-wildfly-backend.iml" filepath="$PROJECT_DIR$/vaadin-multimodule-wildfly-backend/vaadin-multimodule-wildfly-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vaadin-multimodule-wildfly-ui/vaadin-multimodule-wildfly-ui.iml" filepath="$PROJECT_DIR$/vaadin-multimodule-wildfly-ui/vaadin-multimodule-wildfly-ui.iml" />
+    </modules>
+  </component>
+</project>
