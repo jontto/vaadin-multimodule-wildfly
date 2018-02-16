@@ -3,6 +3,14 @@ vaadin-multimodule-wildfly
 
 Template for a full-blown Vaadin application that only requires a Servlet 3.0 container to run (no other JEE dependencies).
 
+In addition to the default Vaadin template, this also has preconfigured the wildfly maven plugin.
+
+To get it running do:
+1. Download Wildfly to your machine and install to a folder
+1. Point the jbossHome configuration to the folder of your Wildfly.
+1. In vaadin-multimodule-wildfly-ui project run 'mvn package wildfly:run -DskipTests=true' to get
+it running and your application deployed.
+1. Browse to http://localhost:8080/vaadin-multimodule-wildfly
 
 Project Structure
 =================

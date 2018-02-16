@@ -62,7 +62,17 @@
 	</dependencies>
 
 	<build>
+        <finalName>vaadin-multimodule-wildfly</finalName>
 		<plugins>
+			<!-- Wildfly plugins -->
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>${wildfly.plugin.version}</version>
+                <configuration>
+                    <jbossHome>C:\servers\wildfly-10.1.0.Final</jbossHome>
+                </configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
