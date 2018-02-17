@@ -7,9 +7,9 @@ In addition to the default Vaadin template, this also has preconfigured the wild
 
 To get it running do:
 1. Download Wildfly to your machine and install to a folder
-1. Point the jbossHome configuration to the folder of your Wildfly.
+1. Point the jbossHome configuration in vaadin-multimodule-wildfly-ui/pom.xml to the folder of your Wildfly.
 1. In vaadin-multimodule-wildfly-ui project run 'mvn package wildfly:run -DskipTests=true' to get
-it running and your application deployed.
+it running quickly and your application deployed.
 1. Browse to http://localhost:8080/vaadin-multimodule-wildfly
 
 Project Structure
@@ -18,7 +18,7 @@ Project Structure
 The project consists of the following three modules:
 
 - parent project: common metadata and configuration
-- vaadin-multimodule-wildfly-addon: addon module, custom server and client side code 
+- vaadin-multimodule-wildfly-addon: addon module, custom server and client side code
 - vaadin-multimodule-wildfly-ui: main application module
 - vaadin-multimodule-wildfly-backend: backend module, contains any server side java code and dependencies
 
@@ -55,11 +55,11 @@ When developing the theme, Vaadin can be configured to compile the SASS based
 theme at runtime in the server. This way you can just modify the scss files in
 your IDE and reload the browser to see changes.
 
-To use on the runtime compilation, open pom.xml of your UI project and comment 
-out the compile-theme goal from vaadin-maven-plugin configuration. To remove 
+To use on the runtime compilation, open pom.xml of your UI project and comment
+out the compile-theme goal from vaadin-maven-plugin configuration. To remove
 an existing pre-compiled theme, remove the styles.css file in the theme directory.
 
-When using the runtime compiler, running the application in the "run" mode 
+When using the runtime compiler, running the application in the "run" mode
 (rather than in "debug" mode) can speed up consecutive theme compilations
 significantly.
 
